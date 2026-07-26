@@ -9,63 +9,63 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold mb-4 text-center">
-        Get In <span className="text-cyan-400">Touch</span>
+    <section id="contact" className="py-20 px-6 max-w-7xl mx-auto transition-colors">
+      <h2 className="text-3xl font-bold mb-4 text-center text-slate-900 dark:text-slate-100">
+        Get In <span className="text-cyan-500 dark:text-cyan-400">Touch</span>
       </h2>
-      <p className="text-slate-400 text-center max-w-xl mx-auto mb-12">
+      <p className="text-slate-600 dark:text-slate-400 text-center max-w-xl mx-auto mb-12">
         Have a project in mind, a backend development opportunity, or just want to connect? Feel free to reach out.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         {/* Contact Info & Details */}
-        <div className="space-y-8 p-8 rounded-2xl bg-slate-900/50 border border-slate-800">
-          <h3 className="text-xl font-semibold text-slate-100">Contact Information</h3>
+        <div className="space-y-8 p-8 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none">
+          <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100">Contact Information</h3>
           
           <div className="space-y-6">
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+              <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-medium text-slate-400 uppercase tracking-wider">Email</p>
-                <a href="mailto:t.rahul3105@gmail.com" className="text-slate-200 hover:text-cyan-400 font-medium transition-colors">
+                <p className="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email</p>
+                <a href="mailto:t.rahul3105@gmail.com" className="text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 font-medium transition-colors">
                   t.rahul3105@gmail.com
                 </a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+              <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-medium text-slate-400 uppercase tracking-wider">Phone</p>
-                <a href="tel:+917415249781" className="text-slate-200 hover:text-cyan-400 font-medium transition-colors">
+                <p className="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Phone</p>
+                <a href="tel:+917415249781" className="text-slate-800 dark:text-slate-200 hover:text-cyan-500 dark:hover:text-cyan-400 font-medium transition-colors">
                   +91 7415249781
                 </a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+              <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-600 dark:text-cyan-400">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-medium text-slate-400 uppercase tracking-wider">Location</p>
-                <p className="text-slate-200 font-medium">Pune, Maharashtra</p>
+                <p className="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider">Location</p>
+                <p className="text-slate-800 dark:text-slate-200 font-medium">Pune, Maharashtra</p>
               </div>
             </div>
           </div>
 
-          <div className="pt-6 border-t border-slate-800">
-            <p className="text-xs font-medium text-slate-400 uppercase tracking-wider mb-4">Profiles</p>
+          <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
+            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">Profiles</p>
             <div className="flex items-center gap-4">
               <a
                 href="https://linkedin.com/in/rahul-tiwari-421254255"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-slate-800 text-slate-300 hover:text-cyan-400 hover:bg-slate-700 transition-all border border-slate-700/50"
+                className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700/50"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ export default function Contact() {
                 href="https://github.com/shivam1234tiwari"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-slate-800 text-slate-300 hover:text-cyan-400 hover:bg-slate-700 transition-all border border-slate-700/50"
+                className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700/50"
                 aria-label="GitHub"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -87,18 +87,18 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Contact Form with Netlify Attributes */}
-        <div className="p-8 rounded-2xl bg-slate-900/50 border border-slate-800">
+        {/* Contact Form */}
+        <div className="p-8 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none">
           {submitted ? (
             <div className="py-12 text-center space-y-4">
-              <CheckCircle className="w-16 h-16 text-cyan-400 mx-auto" />
-              <h3 className="text-2xl font-bold text-slate-100">Message Sent!</h3>
-              <p className="text-slate-400">
+              <CheckCircle className="w-16 h-16 text-cyan-500 dark:text-cyan-400 mx-auto" />
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Message Sent!</h3>
+              <p className="text-slate-600 dark:text-slate-400">
                 Thank you for reaching out. I will get back to you as soon as possible.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
-                className="mt-4 px-6 py-2.5 rounded-xl bg-slate-800 text-cyan-400 font-semibold border border-slate-700 hover:bg-slate-700 transition-all cursor-pointer"
+                className="mt-4 px-6 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-cyan-600 dark:text-cyan-400 font-semibold border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
               >
                 Send Another Message
               </button>
@@ -114,7 +114,7 @@ export default function Contact() {
               <input type="hidden" name="form-name" value="contact" />
 
               <div>
-                <label className="block text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                   Your Name
                 </label>
                 <input
@@ -122,12 +122,12 @@ export default function Contact() {
                   name="name"
                   required
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                   Your Email
                 </label>
                 <input
@@ -135,12 +135,12 @@ export default function Contact() {
                   name="email"
                   required
                   placeholder="john@example.com"
-                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">
+                <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                   Message
                 </label>
                 <textarea
@@ -148,7 +148,7 @@ export default function Contact() {
                   required
                   rows={4}
                   placeholder="Write your message here..."
-                  className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
                 ></textarea>
               </div>
 
