@@ -45,7 +45,7 @@ const projects = [
       "https://github.com/shivam1234tiwari/Rent-a-Ride",
 
     demo:
-      "#",
+      " rent-a-ride1.vercel.app",
   },
 
   {
