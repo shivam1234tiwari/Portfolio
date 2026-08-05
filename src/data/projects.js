@@ -33,11 +33,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "MERN Ecommerce",
+    title: "Ecommerce",
     image: ecommerce,
     description: "Full Stack Ecommerce Application with Admin Dashboard.",
     tech: ["React", "Node", "MongoDB"],
-    github: "https://github.com/shivam1234tiwari/Ecommerce-mern-app",
+    github: "https://github.com/shivam1234tiwari/E-Commerce.git",
     demo: "", // Set empty if no live demo is available
   },
 ];
