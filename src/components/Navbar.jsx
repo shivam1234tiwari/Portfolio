@@ -29,19 +29,34 @@ export default function Navbar() {
     }
   };
 
+  const navLinks = [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Certificates', href: '#certifications' },
+    { name: 'Contact', href: '#contact' },
+  ];
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo / Name */}
-        <a href="#" className="text-xl font-bold text-slate-900 dark:text-slate-100 tracking-wider">
+        <a href="#home" className="text-xl font-bold text-slate-900 dark:text-slate-100 tracking-wider">
           Rahul <span className="text-cyan-500">Tiwari</span>
         </a>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-8">
-          <a href="#about" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors">About</a>
-          <a href="#projects" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors">Projects</a>
-          <a href="#contact" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors">Contact</a>
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
 
         {/* Right side buttons (Theme Toggle + Book a Call) */}
@@ -55,7 +70,7 @@ export default function Navbar() {
           </button>
 
           <a
-            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ03..." // Apna Google Calendar appointment link yahan dalein
+            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ03..."
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/10"
@@ -87,27 +102,16 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 right-0 bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 px-6 py-6 flex flex-col gap-4 shadow-xl">
-          <a
-            href="#about"
-            onClick={() => setIsOpen(false)}
-            className="text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-500"
-          >
-            About
-          </a>
-          <a
-            href="#projects"
-            onClick={() => setIsOpen(false)}
-            className="text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-500"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            onClick={() => setIsOpen(false)}
-            className="text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-500"
-          >
-            Contact
-          </a>
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className="text-base font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-500"
+            >
+              {link.name}
+            </a>
+          ))}
           <a
             href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ03..."
             target="_blank"

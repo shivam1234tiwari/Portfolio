@@ -1,10 +1,10 @@
 import React from 'react';
 import { ArrowRight, FileText, Calendar } from 'lucide-react';
-import profileImg from '../assets/profile.jpg'; // Yahan assets se image import ki gayi hai
+import profileImg from '../assets/profile.jpg';
 
 export default function Hero() {
   return (
-    <section id="about" className="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 transition-colors">
+    <section id="home" className="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 transition-colors scroll-mt-20">
       {/* Left Content */}
       <div className="flex-1 space-y-6 text-center md:text-left">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 border border-cyan-500/20 text-xs font-semibold tracking-wide uppercase">
@@ -39,11 +39,10 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Social / External Links */}
+        {/* Social Links */}
         <div className="pt-4 flex items-center justify-center md:justify-start gap-4 text-slate-500 dark:text-slate-400">
-          {/* GitHub SVG */}
           <a
-            href="https://github.com"
+            href="https://github.com/shivam1234tiwari"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
@@ -54,9 +53,8 @@ export default function Hero() {
             </svg>
           </a>
 
-          {/* LinkedIn SVG */}
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/rahul-tiwari-421254255"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
@@ -66,19 +64,10 @@ export default function Hero() {
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
           </a>
-
-          <a
-            href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ03..."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors flex items-center gap-2 text-sm font-medium"
-          >
-            <Calendar className="w-4 h-4 text-cyan-500" /> Book a Call
-          </a>
         </div>
       </div>
 
-      {/* Right Visual / Profile Image */}
+      {/* Right Profile Image */}
       <div className="flex-1 flex justify-center">
         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 dark:border-cyan-500/20 p-2 shadow-2xl flex items-center justify-center">
           <img
