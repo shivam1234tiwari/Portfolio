@@ -31,6 +31,13 @@ export default function Projects() {
       github: 'https://github.com/shivam1234tiwari/E-Commerce.git',
       demo: '',
     },
+     {
+      title: 'titanfit-gym',
+      description: 'Full-Stack Gym Management Portal Full-stack Gym & Fitness Application built with the MERN Stack',
+      tech: ['React', 'Node', 'Expressjs','MongoDB'],
+      github: 'https://github.com/shivam1234tiwari/titanfit-gym.git',
+      demo: 'https://titanfit-gym.vercel.app/',
+    },
   ];
 
   return (

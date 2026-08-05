@@ -40,6 +40,15 @@ const projects = [
     github: "https://github.com/shivam1234tiwari/E-Commerce.git",
     demo: "", // Set empty if no live demo is available
   },
+   {
+    id: 4,
+    title: "titanfit-gym",
+    image: titanfit-gym,
+    description: "Full-Stack Gym Management Portal Full-stack Gym & Fitness Application built with the MERN Stack",
+    tech: ["React", "Node", "Express","MongoDB"],
+    github: "https://github.com/shivam1234tiwari/titanfit-gym.git",
+    demo: "", // Set empty if no live demo is available
+  },
 ];
 
 export default projects;
