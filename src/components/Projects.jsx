@@ -22,7 +22,7 @@ export default function Projects() {
       description: 'JWT Authentication with Login, Register and Authorization.',
       tech: ['Node', 'Express', 'MongoDB', 'JWT'],
       github: 'https://github.com/shivam1234tiwari/Auth-Project',
-      demo: '',
+      demo: 'https://auth-project-inwh.onrender.com',
     },
     {
       title: 'MERN Ecommerce Application',
