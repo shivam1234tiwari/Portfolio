@@ -29,7 +29,7 @@ const projects = [
     description: "JWT Authentication with Login, Register and Authorization.",
     tech: ["Node", "Express", "MongoDB", "JWT"],
     github: "https://github.com/shivam1234tiwari/Auth-Project",
-    demo: "", // Set empty if no live demo is available
+    demo: "https://auth-project-inwh.onrender.com/", // Set empty if no live demo is available
   },
   {
     id: 4,
