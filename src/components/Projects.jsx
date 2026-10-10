@@ -1,117 +1,174 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 
+const GitHubIcon = ({ className = 'w-5 h-5' }) => (
+<svg
+className={`${className} fill-current`}
+viewBox="0 0 24 24"
+aria-hidden="true"
+
+>
+
+```
+<path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2 .7 2 1.8 1.3 3.4.9 4.2.7.2-.7.5-1.2.9-1.5-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C18.8 6.7 19.8 7 19.8 7c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1 .8 2v2.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+```
+
+  </svg>
+);
+
+const projects = [
+{
+title: 'EventHub',
+description:
+'A modern event booking platform for exploring events and managing event-related activities.',
+tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+github: 'https://github.com/shivam1234tiwari/EventHub-Project',
+demo: 'https://eventhub-nine-ruddy.vercel.app/',
+},
+{
+title: 'Rent-A-Ride',
+description:
+'A vehicle rental management application featuring user authentication and vehicle booking functionality.',
+tech: ['React', 'Express.js', 'MongoDB'],
+github: 'https://github.com/shivam1234tiwari/Rent-a-Ride',
+demo: 'https://rent-a-ride1.vercel.app/',
+},
+{
+title: 'Authentication & Security System',
+description:
+'An authentication system featuring user registration, login, JWT authentication, and protected routes.',
+tech: ['Node.js', 'Express.js', 'MongoDB', 'JWT'],
+github: 'https://github.com/shivam1234tiwari/Auth-Project',
+demo: 'https://auth-project-inwh.onrender.com',
+},
+{
+title: 'MERN E-commerce',
+description:
+'A full-stack e-commerce application focused on product management and administrative functionality.',
+tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+github: 'https://github.com/shivam1234tiwari/E-Commerce',
+demo: '',
+},
+{
+title: 'TitanFit Gym',
+description:
+'A full-stack gym and fitness management platform built to organize fitness-related information and services.',
+tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+github: 'https://github.com/shivam1234tiwari/titanfit-gym',
+demo: 'https://titanfit-gym.vercel.app/',
+},
+];
+
 export default function Projects() {
-  const projects = [
-    {
-      title: 'EventHub',
-      description: 'Modern event booking platform built using React and Node.js.',
-      tech: ['React', 'Node', 'Express', 'MongoDB'],
-      github: 'https://github.com/shivam1234tiwari/EventHub-Project',
-      demo: 'https://eventhub-nine-ruddy.vercel.app/',
-    },
-    {
-      title: 'Rent-A-Ride — Vehicle Rental Management',
-      description: 'Vehicle rental management system with authentication and booking.',
-      tech: ['React', 'Express', 'MongoDB'],
-      github: 'https://github.com/shivam1234tiwari/Rent-a-Ride',
-      demo: 'https://rent-a-ride1.vercel.app',
-    },
-    {
-      title: 'Advanced Authentication & Security System',
-      description: 'JWT Authentication with Login, Register and Authorization.',
-      tech: ['Node', 'Express', 'MongoDB', 'JWT'],
-      github: 'https://github.com/shivam1234tiwari/Auth-Project',
-      demo: 'https://auth-project-inwh.onrender.com',
-    },
-    {
-      title: 'MERN Ecommerce Application',
-      description: 'Full Stack Ecommerce Application with Admin Dashboard.',
-      tech: ['React', 'Node', 'MongoDB'],
-      github: 'https://github.com/shivam1234tiwari/E-Commerce.git',
-      demo: '',
-    },
-     {
-      title: 'titanfit-gym',
-      description: 'Full-Stack Gym Management Portal Full-stack Gym & Fitness Application built with the MERN Stack',
-      tech: ['React', 'Node', 'Expressjs','MongoDB'],
-      github: 'https://github.com/shivam1234tiwari/titanfit-gym.git',
-      demo: 'https://titanfit-gym.vercel.app/',
-    },
-  ];
+return ( <section
+   id="projects"
+   className="py-20 px-6 max-w-7xl mx-auto scroll-mt-20"
+ >
+{/* Section Heading */} <div className="text-center mb-12"> <p className="text-cyan-500 dark:text-cyan-400 text-sm font-semibold uppercase tracking-[0.25em] mb-3">
+What I've built </p>
 
-  return (
-    <section id="projects" className="py-20 px-6 max-w-7xl mx-auto transition-colors">
-      <h2 className="text-3xl font-bold mb-12 text-center text-slate-900 dark:text-slate-100">
-        Featured <span className="text-cyan-500 dark:text-cyan-400">Projects</span>
-      </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, idx) => {
-          const hasDemo = project.demo && project.demo.trim() !== '' && project.demo !== '#';
+    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100">
+      Featured{' '}
+      <span className="text-cyan-500 dark:text-cyan-400">
+        Projects
+      </span>
+    </h2>
 
-          return (
-            <div 
-              key={idx} 
-              className="flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 shadow-sm dark:shadow-none transition-all"
-            >
-              <div>
-                <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">
-                  {project.title}
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tech.map((t, tIdx) => (
-                    <span 
-                      key={tIdx} 
-                      className="text-xs px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 font-medium"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </div>
+    <p className="mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-400 leading-relaxed">
+      Explore my projects, technologies, and practical work in
+      full-stack and backend development.
+    </p>
+  </div>
 
-              {/* Action Buttons Row */}
-              <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center gap-3">
-                {/* GitHub Link */}
-                <a 
-                  href={project.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex-1 py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
-                >
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                  </svg>
-                  GitHub
-                </a>
+  {/* Projects Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    {projects.map((project) => {
+      const hasDemo =
+        typeof project.demo === 'string' &&
+        project.demo.trim() !== '';
 
-                {/* Live Demo Link */}
-                {hasDemo ? (
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex-1 py-2.5 px-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-semibold flex items-center justify-center gap-2 transition-all shadow-md shadow-cyan-500/10"
-                  >
-                    <ExternalLink className="w-4 h-4" /> Live Demo
-                  </a>
-                ) : (
-                  <button 
-                    disabled 
-                    className="flex-1 py-2.5 px-4 rounded-xl bg-slate-100 dark:bg-slate-800/50 text-slate-400 text-xs font-semibold flex items-center justify-center gap-2 cursor-not-allowed border border-slate-200 dark:border-slate-800 opacity-60"
-                  >
-                    <ExternalLink className="w-4 h-4" /> Demo N/A
-                  </button>
-                )}
-              </div>
+      return (
+        <article
+          key={project.title}
+          className="group flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/5"
+        >
+          <div>
+            {/* Project Icon */}
+            <div className="w-12 h-12 mb-5 rounded-xl flex items-center justify-center bg-cyan-500/10 border border-cyan-500/20">
+              <GitHubIcon className="w-6 h-6 text-cyan-500 dark:text-cyan-400" />
             </div>
-          );
-        })}
-      </div>
-    </section>
-  );
+
+            <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+              {project.title}
+            </h3>
+
+            <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+              {project.description}
+            </p>
+
+            {/* Technology Tags */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              {project.tech.map((technology) => (
+                <span
+                  key={technology}
+                  className="text-xs px-3 py-1.5 rounded-lg bg-cyan-500/10 text-cyan-700 dark:text-cyan-400 border border-cyan-500/20 font-medium"
+                >
+                  {technology}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center gap-3">
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title} source code on GitHub`}
+              className="flex-1 py-2.5 px-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
+            >
+              <GitHubIcon className="w-4 h-4" />
+              GitHub
+            </a>
+
+            {hasDemo ? (
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Open ${project.title} live demo`}
+                className="flex-1 py-2.5 px-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-sm font-semibold flex items-center justify-center gap-2 transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </a>
+            ) : (
+              <span className="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 text-slate-400 text-sm font-semibold flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-800">
+                <ExternalLink className="w-4 h-4" />
+                Demo N/A
+              </span>
+            )}
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  {/* GitHub Profile */}
+  <div className="text-center mt-12">
+    <a
+      href="https://github.com/shivam1234tiwari"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:border-cyan-500 hover:text-cyan-500 dark:hover:text-cyan-400 transition-all"
+    >
+      <GitHubIcon className="w-5 h-5" />
+      Explore More on GitHub
+      <ExternalLink className="w-4 h-4" />
+    </a>
+  </div>
+</section>
+
+);
 }
