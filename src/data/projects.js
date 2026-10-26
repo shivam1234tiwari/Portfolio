@@ -1,53 +1,65 @@
+
 import eventhub from "../assets/images/eventhub.png";
 import rentride from "../assets/images/rentride.png";
 import ecommerce from "../assets/images/ecommerce.png";
 import auth from "../assets/images/auth.png";
+import titanfit from "../assets/images/titanfit-gym.png";
 
 const projects = [
   {
     id: 1,
     title: "EventHub",
     image: eventhub,
-    description: "Modern event booking platform built using React and Node.js.",
-    tech: ["React", "Node", "Express", "MongoDB"],
-    github: "https://github.com/shivam1234tiwari/EventHub-Project",
-    demo: "https://eventhub.vercel.app",
+    description:
+      "Event management and booking platform built with React and Node.js.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    github:
+      "https://github.com/shivam1234tiwari/EventHub-Project",
+    demo: "https://eventhub-nine-ruddy.vercel.app/",
   },
   {
     id: 2,
     title: "Rent-a-Ride",
     image: rentride,
-    description: "Vehicle rental management system with authentication and booking.",
-    tech: ["React", "Express", "MongoDB"],
-    github: "https://github.com/shivam1234tiwari/Rent-a-Ride",
-    demo: "https://rent-a-ride1.vercel.app", // Added https:// here
+    description:
+      "Vehicle rental platform with user authentication and booking management.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    github:
+      "https://github.com/shivam1234tiwari/Rent-a-Ride",
+    demo: "https://rent-a-ride1.vercel.app/",
   },
   {
     id: 3,
     title: "Authentication System",
     image: auth,
-    description: "JWT Authentication with Login, Register and Authorization.",
-    tech: ["Node", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/shivam1234tiwari/Auth-Project",
-    demo: "https://auth-project-inwh.onrender.com/", // Set empty if no live demo is available
+    description:
+      "Authentication system featuring registration, login, JWT-based authentication, and protected routes.",
+    tech: ["Node.js", "Express.js", "MongoDB", "JWT"],
+    github:
+      "https://github.com/shivam1234tiwari/Auth-Project",
+    demo: "https://auth-project-inwh.onrender.com/",
   },
   {
     id: 4,
-    title: "Ecommerce",
+    title: "E-commerce",
     image: ecommerce,
-    description: "Full Stack Ecommerce Application with Admin Dashboard.",
-    tech: ["React", "Node", "MongoDB"],
-    github: "https://github.com/shivam1234tiwari/E-Commerce.git",
-    demo: "", // Set empty if no live demo is available
+    description:
+      "Full-stack e-commerce application with product management and an admin dashboard.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    github:
+      "https://github.com/shivam1234tiwari/E-Commerce",
+    demo: "",
   },
-   {
-    id: 4,
-    title: "titanfit-gym",
-    image: titanfit-gym,
-    description: "Full-Stack Gym Management Portal Full-stack Gym & Fitness Application built with the MERN Stack",
-    tech: ["React", "Node", "Express","MongoDB"],
-    github: "https://github.com/shivam1234tiwari/titanfit-gym.git",
-    demo: "", // Set empty if no live demo is available
+  {
+    id: 5,
+    title: "TitanFit Gym",
+    image: titanfit,
+    description:
+      "Gym and fitness web application built with the MERN stack.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    github:
+      "https://github.com/shivam1234tiwari/titanfit-gym",
+    demo: "https://titanfit-gym.vercel.app/",
   },
 ];
 

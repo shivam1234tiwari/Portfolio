@@ -42,7 +42,6 @@ const skillCategories = [
     icon: Database,
     skills: [
       "MongoDB",
-      "Mongoose",
       "MySQL",
       "PostgreSQL",
     ],
@@ -67,6 +66,7 @@ const skillCategories = [
     skills: [
       "Git",
       "GitHub",
+      "GitLab",
       "Postman",
       "Thunder Client",
       "API Testing",

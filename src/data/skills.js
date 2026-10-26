@@ -1,3 +1,4 @@
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -7,6 +8,8 @@ import {
   FaGithub,
   FaDocker,
   FaAws,
+  FaGitAlt,
+  FaLinux,
 } from "react-icons/fa";
 
 import {
@@ -14,21 +17,29 @@ import {
   SiMongodb,
   SiMysql,
   SiPostgresql,
+  SiJsonwebtokens,
 } from "react-icons/si";
 
 const skills = [
-  { name: "HTML5", icon: FaHtml5, level: "95%" },
-  { name: "CSS3", icon: FaCss3Alt, level: "90%" },
-  { name: "JavaScript", icon: FaJs, level: "90%" },
-  { name: "React.js", icon: FaReact, level: "85%" },
-  { name: "Node.js", icon: FaNodeJs, level: "90%" },
-  { name: "Express.js", icon: SiExpress, level: "88%" },
-  { name: "MongoDB", icon: SiMongodb, level: "88%" },
-  { name: "MySQL", icon: SiMysql, level: "85%" },
-  { name: "PostgreSQL", icon: SiPostgresql, level: "80%" },
-  { name: "GitHub", icon: FaGithub, level: "90%" },
-  { name: "Docker", icon: FaDocker, level: "75%" },
-  { name: "AWS", icon: FaAws, level: "75%" },
+  { name: "HTML5", icon: FaHtml5, category: "Frontend" },
+  { name: "CSS3", icon: FaCss3Alt, category: "Frontend" },
+  { name: "JavaScript", icon: FaJs, category: "Frontend" },
+  { name: "React.js", icon: FaReact, category: "Frontend" },
+
+  { name: "Node.js", icon: FaNodeJs, category: "Backend" },
+  { name: "Express.js", icon: SiExpress, category: "Backend" },
+  { name: "REST APIs", icon: FaNodeJs, category: "Backend" },
+  { name: "JWT", icon: SiJsonwebtokens, category: "Backend" },
+
+  { name: "MongoDB", icon: SiMongodb, category: "Databases" },
+  { name: "MySQL", icon: SiMysql, category: "Databases" },
+  { name: "PostgreSQL", icon: SiPostgresql, category: "Databases" },
+
+  { name: "Git", icon: FaGitAlt, category: "Tools & Cloud" },
+  { name: "GitHub", icon: FaGithub, category: "Tools & Cloud" },
+  { name: "Linux", icon: FaLinux, category: "Tools & Cloud" },
+  { name: "Docker", icon: FaDocker, category: "Tools & Cloud" },
+  { name: "AWS", icon: FaAws, category: "Tools & Cloud" },
 ];
 
 export default skills;
