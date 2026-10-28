@@ -54,6 +54,22 @@ const projects = [
     github: "https://github.com/shivam1234tiwari/titanfit-gym",
     demo: "https://titanfit-gym.vercel.app/",
   },
+  {
+    title: "PulseMonitor",
+    description:
+      "An API monitoring and incident management platform featuring automated health checks, response-time tracking, monitoring history, and active/inactive monitoring controls.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+    ],
+    // Replace this URL if your GitHub repository has a different name.
+    github: "https://github.com/shivam1234tiwari/api-monitoring-platform",
+    demo: "https://api-monitoring-management.vercel.app/",
+  },
 ];
 
 export default function Projects() {

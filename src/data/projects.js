@@ -1,9 +1,9 @@
-
 import eventhub from "../assets/images/eventhub.png";
 import rentride from "../assets/images/rentride.png";
 import ecommerce from "../assets/images/ecommerce.png";
 import auth from "../assets/images/auth.png";
 import titanfit from "../assets/images/titanfit-gym.png";
+import pulsemonitor from "../assets/images/pulseMonitor.png";
 
 const projects = [
   {
@@ -60,6 +60,24 @@ const projects = [
     github:
       "https://github.com/shivam1234tiwari/titanfit-gym",
     demo: "https://titanfit-gym.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "PulseMonitor",
+    image: pulsemonitor,
+    description:
+      "API monitoring and incident management platform featuring automated health checks, response-time tracking, monitoring history, and a real-time dashboard.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+    ],
+    github:
+      "https://github.com/shivam1234tiwari/api-monitoring-platform",
+    demo: "https://api-monitoring-management.vercel.app/",
   },
 ];
 
